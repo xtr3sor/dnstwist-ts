@@ -1,0 +1,17 @@
+{
+  "name": "dnstwist-ts-examples",
+  "version": "1.0.0",
+  "description": "Usage examples for dnstwist-ts",
+  "main": "basic-usage.js",
+  "scripts": {
+    "basic": "node basic-usage.js",
+    "engines": "node individual-engines.js",
+    "advanced": "node advanced-usage.js",
+    "dns": "node dns-integration.js",
+    "dictionary": "node custom-dictionary.js",
+    "all": "npm run basic && npm run engines && npm run advanced && npm run dns && npm run dictionary"
+  },
+  "dependencies": {
+    "dnstwist-ts": "file:.."
+  }
+}

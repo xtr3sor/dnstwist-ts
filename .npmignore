@@ -1,0 +1,61 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Development files
+.gitignore
+.npmignore
+tsconfig.json
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Coverage
+coverage/
+.nyc_output
+
+# Documentation (keep README.md and LICENSE)
+docs/
+*.md
+!README.md
+
+# Development dependencies
+node_modules/
