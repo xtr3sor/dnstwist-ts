@@ -274,7 +274,6 @@ console.log("TLD variations:", tldVariations.slice(0, 5));
 // Output: ['facebook.net', 'facebook.org', 'facebook.io', ...]
 ```
 
-
 ### Banking Domain Protection
 
 ```typescript
@@ -517,7 +516,206 @@ npm run all        # Run all examples
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions to dnstwist-ts! Whether you're fixing bugs, adding features, or improving documentation, your help is appreciated.
+
+### How to Contribute
+
+#### 1. Fork the Repository
+
+- Click the "Fork" button on the [GitHub repository page](https://github.com/xtr3sor/dnstwist-ts)
+- Clone your fork locally:
+  ```bash
+  git clone https://github.com/YOUR_USERNAME/dnstwist-ts.git
+  cd dnstwist-ts
+  ```
+
+#### 2. Set Up Development Environment
+
+```bash
+# Install dependencies
+npm install
+
+# Build the project
+npm run build
+
+# Run in development mode (watch for changes)
+npm run dev
+```
+
+#### 3. Create a Feature Branch
+
+```bash
+# Create and switch to a new branch
+git checkout -b feature/your-feature-name
+
+# Or for bug fixes
+git checkout -b fix/issue-description
+```
+
+#### 4. Make Your Changes
+
+- Write your code following the existing style
+- Add tests if applicable
+- Update documentation if needed
+- Ensure TypeScript compilation passes: `npm run build`
+
+#### 5. Test Your Changes
+
+```bash
+# Build the project
+npm run build
+
+# Test your changes manually
+node -e "const { twistDomain } = require('./dist/index.js'); console.log(twistDomain('test.com').slice(0, 3));"
+```
+
+#### 6. Commit Your Changes
+
+```bash
+# Add your changes
+git add .
+
+# Commit with a descriptive message
+git commit -m "feat: add new permutation engine for domain variations"
+```
+
+**Commit Message Guidelines:**
+
+- Use conventional commits format: `type: description`
+- Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+- Examples:
+  - `feat: add keyboard layout permutation engine`
+  - `fix: resolve TLD extraction for multi-part domains`
+  - `docs: update README with new usage examples`
+
+#### 7. Push to Your Fork
+
+```bash
+git push origin feature/your-feature-name
+```
+
+#### 8. Create a Pull Request
+
+- Go to your fork on GitHub
+- Click "New Pull Request"
+- Select your feature branch
+- Fill out the PR template with:
+  - Description of changes
+  - Related issues (if any)
+  - Testing performed
+  - Screenshots (if applicable)
+
+### Contribution Guidelines
+
+#### Code Style
+
+- Follow existing TypeScript/JavaScript conventions
+- Use meaningful variable and function names
+- Add JSDoc comments for public functions
+- Keep functions focused and single-purpose
+
+#### Testing
+
+- Test your changes with various domain inputs
+- Ensure no breaking changes to existing APIs
+- Add examples in the `examples/` directory if adding new features
+
+#### Documentation
+
+- Update README.md for new features
+- Add JSDoc comments for new functions
+- Update type definitions if needed
+
+#### Pull Request Process
+
+1. **Ensure your PR is focused** - one feature/fix per PR
+2. **Write clear descriptions** - explain what and why
+3. **Link related issues** - use "Fixes #123" or "Closes #123"
+4. **Request review** - ask specific people if needed
+5. **Respond to feedback** - be open to suggestions
+
+### Types of Contributions
+
+#### 🐛 Bug Reports
+
+- Use the GitHub issue template
+- Provide steps to reproduce
+- Include expected vs actual behavior
+- Specify environment details
+
+#### ✨ Feature Requests
+
+- Check existing issues first
+- Describe the use case
+- Explain why it would be valuable
+- Consider implementation complexity
+
+#### 🔧 Code Contributions
+
+- Bug fixes
+- New permutation engines
+- Performance improvements
+- TypeScript type improvements
+- Documentation updates
+
+#### 📚 Documentation
+
+- README improvements
+- Code examples
+- API documentation
+- Tutorials or guides
+
+### Development Setup
+
+#### Prerequisites
+
+- Node.js 14+
+- npm or yarn
+- Git
+
+#### Project Structure
+
+```
+dnstwist-ts/
+├── src/                 # TypeScript source files
+│   ├── index.ts        # Main library file
+│   └── dictionaryEN.json # English dictionary
+├── dist/               # Compiled JavaScript (auto-generated)
+├── examples/           # Usage examples
+├── package.json        # Package configuration
+├── tsconfig.json       # TypeScript configuration
+└── README.md          # This file
+```
+
+#### Available Scripts
+
+- `npm run build` - Compile TypeScript to JavaScript
+- `npm run dev` - Watch mode for development
+- `npm run clean` - Remove dist directory
+- `npm run prepublishOnly` - Build before publishing
+
+### Getting Help
+
+- **GitHub Issues**: For bugs and feature requests
+- **GitHub Discussions**: For questions and general discussion
+- **Pull Requests**: For code contributions
+
+### Code of Conduct
+
+- Be respectful and inclusive
+- Focus on constructive feedback
+- Help others learn and grow
+- Follow the [Contributor Covenant](https://www.contributor-covenant.org/)
+
+### Recognition
+
+Contributors will be recognized in:
+
+- README.md contributors section
+- Release notes
+- GitHub contributors page
+
+Thank you for contributing to dnstwist-ts! 🚀
 
 ## License
 

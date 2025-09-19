@@ -26,16 +26,16 @@
     "typescript",
     "dnstwist"
   ],
-  "author": "dnstwist-ts contributors",
+  "author": "xtr3sor",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dnstwist-ts/dnstwist-ts.git"
+    "url": "https://github.com/xtr3sor/dnstwist-ts.git"
   },
   "bugs": {
-    "url": "https://github.com/dnstwist-ts/dnstwist-ts/issues"
+    "url": "https://github.com/xtr3sor/dnstwist-ts/issues"
   },
-  "homepage": "https://github.com/dnstwist-ts/dnstwist-ts#readme",
+  "homepage": "https://github.com/xtr3sor/dnstwist-ts#readme",
   "dependencies": {
     "tldts": "^7.0.14",
     "tlds": "^1.240.0"
@@ -52,6 +52,6 @@
   },
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/dnstwist-ts"
+    "url": "https://github.com/sponsors/xtr3sor"
   }
 }
