@@ -1,6 +1,6 @@
 {
   "name": "dnstwist-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript port of DNSTwist - Domain name permutation engine for detecting typo squatting, phishing and corporate espionage",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
